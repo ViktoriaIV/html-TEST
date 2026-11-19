@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital@0;1&display=swap');
+
+body{  font-family: "Plus Jakarta Sans", sans-serif;
+    width: 100%;
+}
+.container{width: 1440px;
+    margin: 0 auto;
+    padding: 20px 95px;}
+header{height: 86px;
+width: 100%;
+    background: #EFF0F3;
+    /* For White Background */
+    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+}
+.logo{color: #001858;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;}
+.logo span{color:#6246EA;
+    width: 48px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;}
+.container .wrapper{display: flex;
+justify-content: space-between;
+align-items: center;}
+nav ul{display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+nav ul li a{color: #2B2C34;
+    /* 20 px - Sub Heading 2 */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;}
+nav ul li .header__button{display: flex;
+    padding: 10px 17px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background: #6246EA;}
+nav ul li .header__button span{color: #FFFFFE;
+   width: 145px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;}
