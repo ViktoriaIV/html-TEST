@@ -3,10 +3,12 @@ body{font-family: "Plus Jakarta Sans", sans-serif;
     width: 100%;
     background: #FFFFFE;}
 .container{width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 95px;}
 
-.wrapper{ display: flex;
+.wrapper{ width:100%;
+    display: flex;
     justify-content:space-between;
     align-items: center;}
 /*--------------------header------------------*/
@@ -110,18 +112,18 @@ gap: 13px;}
     background: #6246EA;
    }
 /*---------------------section2--------------*/
-.section-2{background: #EFF0F3;
+.section-2 {
+    background: #EFF0F3;
     width: 100%;
     height: 500px;
-padding: 67px 0 68px 0}
+}
 .header-card{display: flex;
-    width: 1252px;
     height: 35px;
-    padding: 2px 0 3px 0;
+
     justify-content: space-between;
     align-items: center;
 }
-.header-card h2{width: 251px;
+.header-card h2{;
     color: #2B2C34;
     /* 24 px - Sub heading 1 */
     font-size: 24px;
@@ -145,13 +147,131 @@ padding: 67px 0 68px 0}
 margin-left: 12px;}
 .grid-cards{margin-top: 50px;
     display: grid;
-grid-template-columns: repeat(5, 1fr)}
+grid-template-columns: repeat(5, 1fr);
 
-.cards
+gap: 37px;}
+
+
 
 /*-------------section-3---------------*/
 
-/*.section-3{width: 1440px;*/
-/*    height: 4792px;*/
-/*    background: #FFFFFE;}*/
-/*.section-3__card{}*/
+.section-3{width: 100%;
+    height: 4792px;
+    background: #FFFFFE;}
+.section-3__article-cards{display: grid;
+grid-template-rows: repeat(2, 1fr);}
+
+.articles{display:grid;
+grid-template-columns: repeat(4, 316px);
+gap: 16px;
+margin: 50px 0 80px 0;}
+
+
+.article-card{width: 316px;
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.header-article-card{display: flex;
+justify-content: space-between;
+  justify-items: center;
+align-items: center;
+    margin-bottom: 30px;
+}
+.article-a span{
+    height: 14px;
+    margin-left: 12px;}
+.header-article-card .article-a{color:#2B2C34;
+    text-align: right;
+    /* 20 px - Sub Heading 2 */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;}
+.section-3__article-cards h3{width: 260px;
+    color: #2B2C34;
+    margin-bottom: 30px;
+    /* 20 px - Sub Heading 2 */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;}
+
+.articles .article-footer{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:15px;
+    margin-top:auto;
+}
+.article-card img{
+    width:260px;
+    height: 198px;
+    border-radius: 12.599px;
+    background: lightgray 50% / cover no-repeat;
+    object-fit: cover;
+}
+
+
+.article-footer aside{display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4.2px;}
+    .article-footer{display: flex;
+    justify-content: center;
+    align-items: center;}
+.article-footer span{color:#2B2C34;
+    /* 16 px - Paragraph 3 Semi bold */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 73px;
+    height: 21px;
+}
+
+.article-footer p{width: 184px;
+    height: 21px;
+    color: #2B2C34;
+    /* 14 px - Paragraph 4 */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;}
+
+.article-footer img{width: 57px;
+    height: 57px;
+    border-radius: 57px;
+    background: lightgray 50% / cover no-repeat;}
+.section-3 button{display: flex;
+    padding: 20px 23px 19px 23px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background:#6246EA;
+    color: #FFFFFE;
+    /* 20 px - Sub Heading 2 */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;}
+.section-3__button{display: flex;
+flex-direction: column;
+align-items: center;
+margin: 80px auto 80px auto;
+}
+/*------------------section4----------------------*/
+.section-4{display: inline-flex;
+    padding: 58px 372px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background:#EFF0F3;
+margin: 58px 372px 58px 372px;}
